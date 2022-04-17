@@ -8,7 +8,7 @@
  * @returns {number}
  */
 export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
-     return Math.min(minFirst, minSecond ) * Math.max(maxFirst, maxSecond );
+     return Math.min(minFirst, minSecond ) * Math.max(maxFirst, maxSecond )
     };
 
 /**
@@ -19,7 +19,7 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
  * @returns {number}
  */
 export const getSquareOfCircle = (radius) => {
-    return Math.pow(radius, 2) *  Math.PI;
+    return Math.pow(radius, 2) *  Math.PI
 };
 
 /**
@@ -40,7 +40,14 @@ export const getFixedValue = (number, accuracy) => {
  * @param {number} number
  * @returns {number}
  */
-export const getFlooroCeil = (number) => {};
+export const getFlooroCeil = (number) => {
+    if (Math.trunc(number) % 2 ===0) {
+        return Math.floor(number);
+    }
+    else{
+        return Math.ceil(number);
+    }
+};};
 
 /**
  * Мы передаем два числа, от какого и до какого числа и функция должна
