@@ -47,7 +47,7 @@ export const getFlooroCeil = (number) => {
     else{
         return Math.ceil(number);
     }
-};};
+};
 
 /**
  * Мы передаем два числа, от какого и до какого числа и функция должна
